@@ -3,7 +3,7 @@ What is this project doing?
 This is simply a preperation project for a bigger project later on. It gives us an overview of what we are going to make.
 
 Why is this project useful?
-The project is usefull to give all members a clue of what we´re all working towards. It is important to make our ideas visual so we can share and work on them them. Even though we´re only two it helps alot with the collabrative effort.
+The project is usefull to give all members a clue of what we´re all working towards. It is important to make our ideas visual so we can share and work on them. Even though we´re only two it helps alot with the collabrative effort.
 
 How can users get started with this project?
 The project will be pushed to GitHub, that means you can get the code and change it.
