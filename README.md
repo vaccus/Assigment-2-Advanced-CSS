@@ -9,7 +9,7 @@ How can users get started with this project?
 The project will be pushed to GitHub, that means you can get the code and change it.
 
 Where can users get help with this project?
-
+Users can get help by finding our information in one of the files, that will be uploaded.
 
 What technology is used in this project?
 We used figma.
