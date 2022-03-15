@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: rgb(255, 254, 189);
+  --linear: rgb(214, 225, 255), rgb(92, 5, 5);
+}
+
+@-webkit-keyframes vegard-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes vegard-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.canvas {
+  background-color: var(--background-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.contaigner {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.square {
+  height: 300px;
+  width: 300px;
+  background-image: linear-gradient(80deg, var(--linear));
+  background-size: 400%;
+  position: absolute;
+  -webkit-animation: vegard-animation 6s infinite alternate;
+          animation: vegard-animation 6s infinite alternate;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.square:hover {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+/*# sourceMappingURL=style.css.map */
