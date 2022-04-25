@@ -1,25 +1,34 @@
-@keyframes spin {
-        from {
-            transform: rotate(0deg);
-            -webkit-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -ms-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-    }
-        to {
-            transform: rotate(180deg);
-            -webkit-transform: rotate(180deg);
-            -moz-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            -o-transform: rotate(180deg);
+@keyframes fishbubbles {
+    to {
+        transform: translateX(250px)
     }
 }
 
-@keyframes colorchange {
-    from {
-        background-color: var(--main-square-color)
-    }
+@keyframes fishswim {
     to {
-        background-color: var(--second-square-color)
+        transform: translateX(250px)
     }
+
+}
+
+@keyframes octopusbubbles {
+    to {
+        transform: translateY(-250px)
+    }
+}
+
+@keyframes octopusflap {
+    to {
+        transform: translateY(-250px)
+    }
+}
+
+@keyframes algaewave {
+        from {
+            transform: rotate(1deg);
+        }
+        to {
+            transform: rotate(-1deg);
+           }
+
 }
