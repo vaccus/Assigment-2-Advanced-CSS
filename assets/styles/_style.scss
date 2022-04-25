@@ -1,18 +1,98 @@
+@font-face {
+    font-family: Open-Sans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Open-Sans-italic;
+    src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
-    background-color: var(--main-background-color);
+    overflow-x: hidden;
 }
 
-.content {
+#fishmain {
+    background-color: var(--first-water-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+#fishbubbles {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 650px;
+    top: 400px;
+    animation: fishbubbles 3s;
+}
+
+#fish {
+    position: absolute;
+    width: 392px;
+    height: 196px;
+    left: 340px;
+    top: 527px;
+    animation: fishswim 3s;
+}
+
+#octopusmain {
     display: grid;
-    justify-content: center;
-    background-color: var(--div-background-color);
+    background-color: var(--second-water-color);
+    width: 100vw;
+    height: 100vh;
+}
+ 
+#octopusheading {
+    grid-column: 3;
+    grid-row: 2;
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 3rem;
+    max-width: 25ch;
 }
 
-.square {
-    background-color: var(--main-square-color);
-    width: 200px;
-    height: 200px;
-    animation: spin 3s infinite, colorchange 3s infinite;
-    -webkit-animation: spin 3s infinite, colorchange 3s infinite;
-    margin: 50px;
+#octopusbubbles {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 125px;
+    top: 1050px;
+    animation: octopusbubbles 3s;
+}
+
+#octopus {
+    position: relative;
+    width: 456.82px;
+    height: 462.92px;
+    left: 125px;
+    top: 425px;
+    animation: octopusflap 3s;
+}
+
+#algaemain {
+    display: grid;
+    background-color: var(--third-water-color);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#algae {
+    position: relative;
+    width: 1000px;
+    height: 750px;
+    justify-self: center;
+    bottom: -400px;
+    animation: algaewave 3s infinite;
+    animation-direction: alternate;
 }
