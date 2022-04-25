@@ -1,0 +1,11 @@
+@media (prefers-reduced-motion) {
+    #fishbubbles, #fish, #octopusbubbles, #octopus {
+        animation: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #fishmain, #octopusmain,#algaemain {
+        background: darkblue;
+    }
+}
